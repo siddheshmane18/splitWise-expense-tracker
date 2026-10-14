@@ -41,6 +41,27 @@ and DAO classes perform database operations.
 6. Deploy the generated WAR file to Tomcat.
 7. Open the application's dashboard in your browser.
 
+## Database Setup
+
+SplitWise uses **PostgreSQL** as its relational database for storing personal expenses, users, expense groups, group members, shared expenses, and individual expense shares.
+
+### Database Technology
+
+- **Database:** PostgreSQL
+- **Database name:** `splitWise_db`
+- **Java database access:** JDBC
+- **Spring integration:** Spring `JdbcTemplate`
+- **Database driver:** PostgreSQL JDBC Driver
+
+### Database Schema
+
+The database contains the following core tables:
+
+| Table | Description |
+|---|---|
+| `users` | Stores user information, including name and email. |
+| `personal_expenses` | Stores personal expenses belonging to individual users. |
+
 ## Project Status
 
 This is an educational prototype built while learning
