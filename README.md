@@ -92,6 +92,9 @@ traditional Spring MVC, JSP, JDBC, and PostgreSQL.
 The current version uses a predefined demo user.
 Authentication and collaborative expense-splitting features
 are planned for later development.
+<img width="1920" height="1014" alt="Screenshot (363)" src="https://github.com/user-attachments/assets/41b6dfd1-13f4-4a4c-98be-a0074a81e343" />
+<img width="1920" height="1017" alt="Screenshot (364)" src="https://github.com/user-attachments/assets/19fff39f-cee8-4ce9-84e6-3bbc665cf2a8" />
+
 
 ## Future Improvements
 
