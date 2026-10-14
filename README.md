@@ -62,6 +62,28 @@ The database contains the following core tables:
 | `users` | Stores user information, including name and email. |
 | `personal_expenses` | Stores personal expenses belonging to individual users. |
 
+### 1. Users Table
+
+| Column | Data Type | Description |
+|---|---|---|
+| `id` | BIGINT | Unique user identifier and primary key |
+| `full_name` | VARCHAR(100) | Full name of the user |
+| `email` | VARCHAR(255) | User's email address |
+| `created_at` | TIMESTAMP | Date and time when the record was created |
+
+### 2. Personal Expenses Table
+
+| Column | Data Type | Description |
+|---|---|---|
+| `id` | BIGINT | Unique expense identifier and primary key |
+| `user_id` | BIGINT | ID of the user who owns the expense |
+| `title` | VARCHAR(120) | Expense title, such as Lunch or Transport |
+| `amount` | NUMERIC(12,2) | Expense amount, which must be greater than zero |
+| `category` | VARCHAR(50) | Expense category, such as Food, Shopping, or Education |
+| `expense_date` | DATE | Date on which the expense occurred |
+| `notes` | TEXT | Optional additional details |
+| `created_at` | TIMESTAMP | Date and time when the expense record was created |
+
 ## Project Status
 
 This is an educational prototype built while learning
